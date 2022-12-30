@@ -63,6 +63,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="index.css">
    <script src="index.js"></script>
+   <link rel="icon" type="image/x-icon" href="../photos/WMA.png">
    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
    <title>Interest Form</title>
 </head>
