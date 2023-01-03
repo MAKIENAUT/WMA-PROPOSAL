@@ -434,8 +434,7 @@ input[type="radio"] {
 
 .scheduling {
    width: 70%;
-   height: 850px;
-   border: 1px solid red;
+   height: 1000px;
 
    display: flex;
    align-items: center;
