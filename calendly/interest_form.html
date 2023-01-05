@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="index.css">
+   <script src="index.js"></script>
+   <link rel="icon" type="image/x-icon" href="../photos/WMA.png">
+   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+   <title>Interest Form</title>
+</head>
+
+<body>
+   <!-- NAVIGATION BAR SECTION [ START ] -->
+   <nav class="navbar" id="myNavBar">
+
+      <!-- LOGO SECTION [ START ] -->
+      <div class="logo_holder">
+         <a class="nav_logo" href="https://westmigrationagency.com/">
+            <img src="../photos/wma-logo.png" />
+         </a>
+      </div>
+      <!-- LOGO SECTION [ START ] -->
+
+      <!-- LINKS SECTION [ START ] -->
+      <div class="link_holder" id="link_holder">
+         <div class="nav_links">
+            <a href="../news/news.html">News</a>
+         </div>
+         <div class="nav_links">
+            <a href="../form/interest_form.php">Forms</a>
+         </div>
+         <div class="nav_links">
+            <a href="../process/process.html">Process</a>
+         </div>
+         <div class="nav_links">
+            <a href="../about/about.html">About Us</a>
+         </div>
+         <div class="nav_links">
+            <a href="../contact/contact.html">Contact Us</a>
+         </div>
+      </div>
+      <!-- LINKS SECTION [ END ] -->
+
+      <!-- BURGER MENU SECTION [ START ] -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+      <!-- BURGER MENU SECTION [ START ] -->
+
+   </nav>
+   <!-- NAVIGATION BAR SECTION [ END ] -->
+
+   <!-- ------------------------------------ -->
+
+   <!-- FORM SECTION -->
+   <section id="section">
+      <div class="container">
+         <div class="scheduling">
+            <div class="scheduling_title">
+               <h1>Consultation Appointment</h1>
+               <p>
+                  This section will be reserved to those who have received a proprietary email from the administration to set an appointment.
+               </p>
+            </div>
+            <!-- Calendly inline widget begin -->
+            <div 
+               class="calendly-inline-widget" 
+               data-url="https://calendly.com/westmigrationagency/30min" >
+            </div>
+            <script 
+               type="text/javascript" 
+               src="https://assets.calendly.com/assets/external/widget.js" async>
+            </script>
+            <!-- Calendly inline widget end -->
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>

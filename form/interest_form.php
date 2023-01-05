@@ -251,25 +251,6 @@
                </div>
             </div>
          </form>
-
-         <div class="scheduling">
-            <div class="scheduling_title">
-               <h1>Consultation Appointment</h1>
-               <p>
-                  This section will be reserved to those who have received a proprietary email from the administration to set an appointment.
-               </p>
-            </div>
-            <!-- Calendly inline widget begin -->
-            <div 
-               class="calendly-inline-widget" 
-               data-url="https://calendly.com/westmigrationagency/30min" >
-            </div>
-            <script 
-               type="text/javascript" 
-               src="https://assets.calendly.com/assets/external/widget.js" async>
-            </script>
-            <!-- Calendly inline widget end -->
-         </div>
       </div>
    </section>
 </body>
