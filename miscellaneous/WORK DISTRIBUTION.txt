@@ -1,0 +1,68 @@
+The main pages of the website are active and running.
+Slight changes, deviations, and implementations are coming.
+
+UPDATE: 
+   - An email address was made for us by the company to update us of any changes.
+   - !!! There are two websites being managed as of the moment.
+
+WEBSITES:
+   MAIN WEBSITE:
+      - WMA: West Migration AGENCY (www.westmigrationagency.com)
+
+   COMPLIANT WEBSITE:
+      - WMA: West Migration CONSULTANCY (www.westmigrationconsultancy.com)
+
+
+ASSIGNMENT PER MEMBER:
+   > MC RAY {
+      - Management of he admin and form pages.
+      - Team informant: I will update you with all given workloads.
+      - Management of the 2nd website being built in compliance to the company's legal statements
+      - will not work on the main website's front end
+      - will work on the main website's back end
+   }
+
+   > SLY {
+      - Manage the design factors of the website (Ask him of any design factors you have a question about)
+      - Continuation of mobile compatibility
+   }
+
+   > ARVIN {
+      - Continuation of mobile compatibility
+   }
+
+   > IRUS JOHN {
+      - Continuation of mobile compatibility
+   }
+
+   > CHUCK {
+      - Continuation of mobile compatibility
+   }
+
+NOTE:
+   !!! UNTIL FURTHER NOTICE, JUST READ THE INSTRUCTIONS HERE
+
+PAGE PLANNING [FINALIZATION]:
+   NEWS {
+      - NO NOTICE FROM CLIENT (IGNORE)
+   }
+   
+   FORMS {
+      - NO UPDATES WHATSOEVER (IGNORE)
+   }
+
+   PROCESS {
+      - SECTION [TIMELINE OF APPLICATION]
+         : The photos needs to be updated based on description
+            File: WEBSITE PAGE FILES / PROCESSES / TIMELINE OF APPLICATION
+   }
+
+   ABOUT US {
+      - FONT: Migrate to GEORGIA Font
+   }
+
+   CONTACT US {
+      - ADDITIONAL CONTENT:
+         { CEBU ADDRESS, EMAIL, LOCATION}
+         FILE: See WEBSITE PAGE FILES for reference
+   }
