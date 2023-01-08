@@ -191,7 +191,9 @@
                <div class="upload" id="upload">
                   <label id="upload-info">4. Document Upload *</label>
 
-                  <label id="valid-title1">!!! Please upload PDF format of files.</label>
+                  <label id="valid-title1">
+                     !!! The form only accepts .PDF file format input.
+                  </label>
                   <label id="valid-title">Resume / Curriculum Vitae *</label>
                   <label for="resume" class="valid-input" id="resume_label">
                      Resume / Curriculum Vitae

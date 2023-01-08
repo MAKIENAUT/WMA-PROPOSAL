@@ -59,7 +59,7 @@ PAGE PLANNING [FINALIZATION]:
 
    ABOUT US {
       - FONT: Migrate to GEORGIA Font
-   }
+   }              
 
    CONTACT US {
       - ADDITIONAL CONTENT:
