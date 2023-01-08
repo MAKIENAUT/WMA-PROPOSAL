@@ -1,6 +1,9 @@
 The main pages of the website are active and running.
 Slight changes, deviations, and implementations are coming.
 
+NOTE! When task is done copy and paste this ✅ next to the finished task.
+
+
 UPDATE: 
    - An email address was made for us by the company to update us of any changes.
    - !!! There are two websites being managed as of the moment.
@@ -59,10 +62,31 @@ PAGE PLANNING [FINALIZATION]:
 
    ABOUT US {
       - FONT: Migrate to GEORGIA Font
-   }
+   }              
 
    CONTACT US {
       - ADDITIONAL CONTENT:
          { CEBU ADDRESS, EMAIL, LOCATION}
          FILE: See WEBSITE PAGE FILES for reference
    }
+
+   ADMIN REQUIREMENTS [ONLY FOR LEADER] {
+      - Add Status to the main directory of applicants
+         > Finished
+            [Green checkbox]
+         > Pending / Processing
+            [Yellow Warning Sign]
+         > New Applicant
+            [Red Exclaimation Mark]
+      - Add Actions 
+         {
+            Delete - with confirmation message
+         }
+      - Add Filter
+      - Add Search Feature
+      - Activity Logs
+   }
+
+
+   git remote -v
+   git init
