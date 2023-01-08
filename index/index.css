@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 * {
    padding: 0;
    margin: 0;
@@ -11,173 +12,193 @@ body {
 
 /* NAVIGATION BAR [ START ] */
 
-   /* NAVBAR DESKTOP DESIGN [ START ] */
+/* NAVBAR DESKTOP DESIGN [ START ] */
+.navbar {
+   width: 100%;
+   height: 60px;
+   outline-offset: 3px;
+   box-sizing: border-box;
+   background-size: cover;
+   outline: 1px solid gold;
+   background-image: url(../photos/silk.jpg);
+
+   top: 0;
+   z-index: 10;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo_holder {
+   width: 25%;
+   left: 30px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav_logo {
+   width: 100%;
+   opacity: 0.8;
+   transition: all 0.2s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_logo:hover {
+   opacity: 2;
+   border-radius: 15px;
+   transition: all 0.2s;
+   background-color: transparent;
+}
+
+.nav_logo img {
+   width: 90%;
+}
+
+.link_holder {
+   width: 45%;
+   height: inherit;
+   top: 0;
+   right: 20px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.nav_links {
+   width: auto;
+   height: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_links a {
+   width: 100%;
+   height: 100%;
+   padding: 0 10px;
+   font-size: 15px;
+   font-weight: 300;
+   text-align: center;
+   transition: all 0.2s;
+   text-decoration: none;
+   color: rgb(37, 37, 37);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_links a:hover {
+   font-weight: 400;
+   color: goldenrod;
+   transition: all 0.2s;
+   border-bottom: 2px solid teal;
+}
+
+.icon {
+   display: none;
+}
+
+/* NAVBAR DESKTOP DESIGN [ END ] */
+
+/* NAVBAR RESPONSIVE DESIGN [ START ]*/
+@media only screen and (max-width: 600px) {
    .navbar {
       width: 100%;
       height: 60px;
-      outline-offset: 3px;
-      box-sizing: border-box;
-      background-size: cover;
-      outline: 1px solid gold;
-      background-image: url(../photos/silk.jpg);
-
+      background-color: white;
       top: 0;
+      left: 0;
       z-index: 10;
       position: fixed;
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
-      .logo_holder {
-         width: 25%;
-         left: 30px;
-         position: absolute;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-      }
-         .nav_logo {
-            width: 100%;
-            opacity: 0.8;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-         .nav_logo:hover {
-            opacity: 2;
-            border-radius: 15px;
-            transition: all 0.2s;
-            background-color: transparent;
-         }
-            .nav_logo img {
-               width: 90%;
-            }
-      .link_holder {
-         width: 45%;
-         height: inherit;
-         top: 0;
-         right: 20px;
-         position: absolute;
-         display: flex;
-         align-items: center;
-         justify-content: space-evenly;
-      }
-         .nav_links {
-            width: auto;
-            height: 70%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .nav_links a {
-               width: 100%;
-               height: 100%;
-               padding: 0 10px;
-               font-size: 15px;
-               font-weight: 300;
-               text-align: center;
-               transition: all 0.2s;
-               text-decoration: none;
-               color: rgb(37, 37, 37);
-               font-family: "Montserrat", sans-serif;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-            }
-               .nav_links a:hover {
-                  font-weight: 400;
-                  color: goldenrod;
-                  transition: all 0.2s;
-                  border-bottom: 2px solid teal;
-               }
-               .icon {
-                  display: none;
-               }
-   /* NAVBAR DESKTOP DESIGN [ END ] */
-               
-   /* NAVBAR RESPONSIVE DESIGN [ START ]*/
-   @media only screen and (max-width: 600px) {
-      .navbar {
-         width: 100%;
-         height: 60px;
-         background-color: white;
-         top: 0;
-         left: 0;
-         z-index: 10;
-         position: fixed;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-      }
-         .logo_holder {
-            width: 70%;
-            height: 100%;
-            left: 5px;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .nav_logo {
-               width: 90%;
-               height: 100%;
-               opacity: 1;
-            }
-      .nav_logo img {
-         width: 100%;
-      }
-      .icon {
-         width: 15%;
-         height: 80%;
-         right: 15px;
-         font-weight: 900;
-         font-size: x-large;
-         text-align: center;
-         position: absolute;
-         text-decoration: none;
-         display: flex;
-         justify-content: start;
-         align-items: center;
-      }
-      .icon i {
-         width: 100%;
-         height: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
+
+   .logo_holder {
+      width: 70%;
+      height: 100%;
+      left: 5px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
-   @media screen and (max-width: 600px) {
-      .navbar .link_holder:not(:first-child) {
-         display: none;
-         height: 0;
-         transition: all 1s;
-      }
-      .navbar a.icon {
-         float: right;
-         display: block;
-      }
+
+   .nav_logo {
+      width: 90%;
+      height: 100%;
+      opacity: 1;
    }
-   @media screen and (max-width: 600px) {
-      .navbar.responsive .link_holder {
-         right: 0;
-         top: 55px;
-         width: 100%;
-         height: 200px;
-         display: flex;
-         transition: all 1s;
-         flex-direction: column;
-         background-color: white;
-         border-top: 1px solid gold;
-      }
-      .navbar.responsive .nav_links {
-         height: 200px;
-         width: 80%;
-         display: flex;
-      }
+
+   .nav_logo img {
+      width: 100%;
    }
-   /* NAVBAR RESPONSIVE DESIGN [ END ]*/
+
+   .icon {
+      width: 15%;
+      height: 80%;
+      right: 15px;
+      font-weight: 900;
+      font-size: x-large;
+      text-align: center;
+      position: absolute;
+      text-decoration: none;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+
+   .icon i {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .navbar .link_holder:not(:first-child) {
+      display: none;
+      height: 0;
+      transition: all 1s;
+   }
+
+   .navbar a.icon {
+      float: right;
+      display: block;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .navbar.responsive .link_holder {
+      right: 0;
+      top: 55px;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      transition: all 1s;
+      flex-direction: column;
+      background-color: white;
+      border-top: 1px solid gold;
+   }
+
+   .navbar.responsive .nav_links {
+      height: 200px;
+      width: 80%;
+      display: flex;
+   }
+}
+
+/* NAVBAR RESPONSIVE DESIGN [ END ]*/
 
 /* NAVIGATION BAR [END] */
 
@@ -228,15 +249,18 @@ section {
          border-left: 2px solid gold;
          border-top: 2px solid goldenrod; */
 }
+
 .logo_title img {
    width: inherit;
 }
+
 .title_container {
    width: inherit;
    height: 250px;
    display: flex;
    justify-content: center;
 }
+
 .text_title {
    margin-top: 30px;
    gap: 15px;
@@ -244,16 +268,19 @@ section {
    align-items: center;
    flex-direction: column;
 }
+
 .text_title h1 {
    font-size: 60px;
    font-weight: 800;
    font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .text_title h3 {
    font-size: 20px;
    font-weight: 500;
    font-family: "Montserrat", sans-serif;
 }
+
 .text_title a {
    height: 50px;
    width: 150px;
@@ -274,12 +301,14 @@ section {
    align-items: center;
    justify-content: center;
 }
+
 .text_title a:hover {
    background-color: rgb(209, 157, 26);
    /* border-bottom: 1px solid white; */
    /* color: rgb(255, 213, 4); */
    transition: 0.125s;
 }
+
 /* RESPONSIVE INTRO SECTION */
 @media only screen and (max-width: 600px) {
    section {
@@ -293,8 +322,9 @@ section {
       /* background-position-x: 200px;
     background-position-y: -270px; */
       background-repeat: no-repeat;
-      background-image: url(photos/HOMEPAGE.jpeg);
+      background-image: url(../photos/HOMEPAGE.jpeg);
    }
+
    .section-container {
       width: 100%;
       height: 550px;
@@ -305,6 +335,7 @@ section {
       justify-content: center;
       background-color: rgba(255, 255, 255, 0.329);
    }
+
    .image-container {
       width: 90%;
       height: max-content;
@@ -312,14 +343,17 @@ section {
       align-items: center;
       justify-content: center;
    }
+
    .logo_title {
       width: 100%;
       padding: 15px;
       border-bottom: 2px solid goldenrod;
    }
+
    .logo_title img {
       width: inherit;
    }
+
    .text_title {
       margin-top: 0;
       gap: 15px;
@@ -327,6 +361,7 @@ section {
       align-items: center;
       flex-direction: column;
    }
+
    .title_container {
       width: inherit;
       height: fit-content;
@@ -340,325 +375,435 @@ section {
 
 /* FOOTER BAR SECTION [ START ] */
 
-   /* FOOTER BAR DESKTOP DESIGN [ START ] */
+/* FOOTER BAR DESKTOP DESIGN [ START ] */
+footer {
+   clear: both;
+   width: 100%;
+   height: 220px;
+   outline-offset: 3px;
+   outline: 1px solid goldenrod;
+   border-top: 2px solid rgb(48, 93, 98);
+   background-size: cover;
+   background-position-y: -100px;
+   background-image: url(../photos/silk.jpg);
+}
+
+.footer_container {
+   width: 100%;
+   height: 220px;
+   box-sizing: border-box;
+   gap: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.logo_container {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.logo_container a {
+   width: 100%;
+   margin-top: 15px;
+   transition: 0.5s;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+}
+
+.logo_container a:hover {
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.logo_container img {
+   width: 90%;
+}
+
+.logo_container p {
+   width: 100%;
+   font-size: 12px;
+   padding: 0 15px;
+   font-style: italic;
+   text-align: justify;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact_info {
+   width: 25%;
+   height: 80%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact_info_left {
+   width: 20%;
+   height: 100%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.contact_info_left i {
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   box-sizing: border-box;
+   color: rgb(201, 169, 43);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact_info_right {
+   width: 80%;
+   height: 100%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.contact_info_right>.address {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>.e-mail {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>.phone {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>p:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.contact_info_right>a {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 600;
+   text-decoration: none;
+   box-sizing: border-box;
+   color: rgb(201, 169, 43);
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>a:hover {
+   text-decoration: underline;
+}
+
+.about_links {
+   width: 15%;
+   height: 75%;
+   gap: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.about_title {
+   margin: 0;
+   padding: 5px 0;
+   font-size: 18px;
+   font-weight: 800;
+   text-indent: 10px;
+   color: rgb(201, 169, 43);
+   font-family: Georgia, "Times New Roman", Times, serif;
+   display: flex;
+   align-items: center;
+}
+
+.about_links_container {
+   width: 100%;
+   height: fit-content;
+   gap: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.company_links {
+   font-size: 15px;
+   text-indent: 10px;
+   text-decoration: none;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+}
+
+.company_links:hover {
+   text-decoration: underline;
+}
+
+.socials {
+   width: 20%;
+   height: inherit;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.socials-container {
+   width: 100%;
+   padding: 10px 0 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.socials-container a,
+button {
+   padding: 5px;
+   border: none;
+   font-size: 25px;
+   cursor: pointer;
+   color: rgb(201, 169, 43);
+   text-decoration: none;
+   transition: 0.25s;
+}
+
+.email_button button {
+   font-size: 25px;
+   color: goldenrod;
+   background-color: transparent;
+}
+
+#socialButton1:hover {
+   color: blue;
+   transition: 0.25s;
+}
+
+#socialButton2:hover {
+   color: fuchsia;
+   transition: 0.25s;
+}
+
+#socialButton3:hover {
+   color: orange;
+   transition: 0.25s;
+}
+
+/* FOOTER BAR DESKTOP DESIGN [ START ] */
+
+/* RESPONSIVE FOOTER BAR DESIGN [ START ] */
+@media only screen and (max-width: 600px) {
    footer {
       clear: both;
       width: 100%;
-      height: 220px;
+      height: fit-content;
       outline-offset: 3px;
       outline: 1px solid goldenrod;
       border-top: 2px solid rgb(48, 93, 98);
       background-size: cover;
-      background-position-y: -100px;
-      background-image: url(../photos/silk.jpg);
+      background-position-y: 0;
+      background-image: url(photos/silk.jpg);
    }
-      .footer_container {
-         width: 100%;
-         height: 220px;
-         box-sizing: border-box;
-         gap: 15px;
-         display: flex;
-         align-items: center;
-      }
-         .logo_container {
-            width: 30%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-evenly;
-         }
-            .logo_container a {
-               width: 100%;
-               margin-top: 15px;
-               transition: 0.5s;
-               box-sizing: border-box;
-               display: flex;
-               justify-content: center;
-            }
-               .logo_container a:hover {
-                  opacity: 0.7;
-                  transition: 0.5s;
-               }
-               .logo_container img {
-                  width: 90%;
-               }
-            .logo_container p {
-               width: 100%;
-               font-size: 12px;
-               padding: 0 15px;
-               font-style: italic;
-               text-align: justify;
-               box-sizing: border-box;
-               color: rgb(48, 93, 98);
-               font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-         .contact_info {
-            width: 25%;
-            height: 80%;
-            box-sizing: border-box;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .contact_info_left {
-               width: 20%;
-               height: 100%;
-               box-sizing: border-box;
+   .footer_container {
+      width: 100%;
+      height: fit-content;
+      box-sizing: border-box;
+      gap: 10px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+   }
 
-               display: flex;
-               align-items: center;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .contact_info_left i {
-                  width: 100%;
-                  height: 100%;
-                  font-size: 20px;
-                  box-sizing: border-box;
-                  color: rgb(201, 169, 43);
+   .logo_container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      gap: 10px;
+   }
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-               }
-            .contact_info_right {
-               width: 80%;
-               height: 100%;
-               box-sizing: border-box;
+   .logo_container p {
+      width: 100%;
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+      box-sizing: border-box;
+      color: rgb(48, 93, 98);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
 
-               display: flex;
-               align-items: center;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .contact_info_right > .address {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  box-sizing: border-box;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
+   .contact_info {
+      width: auto;
+      height: fit-content;
+      text-align: start;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 70px;
+      margin: 10px 0 0;
+   }
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-               .contact_info_right > .e-mail {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  font-weight: 400;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-               .contact_info_right > .phone {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  box-sizing: border-box;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-                  .contact_info_right > p:hover {
-                     text-decoration: underline;
-                     cursor: pointer;
-                  }
-                  
-               .contact_info_right > a {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  font-weight: 600;
-                  text-decoration: none;
-                  box-sizing: border-box;
-                  color: rgb(201, 169, 43);
-                  font-family: "Montserrat", sans-serif;
+   .contact_info_left {
+      width: auto;
+      height: 100%;
+      box-sizing: border-box;
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-                  .contact_info_right > a:hover {
-                     text-decoration: underline;
-                  }
-         .about_links {
-            width: 15%;
-            height: 75%;
-            gap: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-         }
-            .about_title {
-               margin: 0;
-               padding: 5px 0;
-               font-size: 18px;
-               font-weight: 800;
-               text-indent: 10px;
-               color: rgb(201, 169, 43);
-               font-family: Georgia, "Times New Roman", Times, serif;
-               display: flex;
-               align-items: center;
-            }
-            .about_links_container {
-               width: 100%;
-               height: fit-content;
-               gap: 5px;
-               display: flex;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .company_links {
-                  font-size: 15px;
-                  text-indent: 10px;
-                  text-decoration: none;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-               }
-                  .company_links:hover {
-                     text-decoration: underline;
-                  }
-         .socials {
-            width: 20%;
-            height: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-         }
-            .socials-container {
-               width: 100%;
-               padding: 10px 0 10px 0;
-               display: flex;
-               align-items: center;
-               justify-content: space-evenly;
-            }
-            .socials-container a, button {
-               padding: 5px;
-               border: none;
-               font-size: 25px;
-               cursor: pointer;
-               color: rgb(201, 169, 43);
-               text-decoration: none;
-               transition: 0.25s;
-            }
-               .email_button button {
-                  font-size: 25px;
-                  color: goldenrod;
-                  background-color: transparent;
-               }
-                  #socialButton1:hover {
-                     color: blue;
-                     transition: 0.25s;
-                  }
-                  #socialButton2:hover {
-                     color: fuchsia;
-                     transition: 0.25s;
-                  }
-                  #socialButton3:hover {
-                     color: orange;
-                     transition: 0.25s;
-                  }
-   /* FOOTER BAR DESKTOP DESIGN [ START ] */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 10px;
+   }
 
-   /* RESPONSIVE FOOTER BAR DESIGN [ START ] */
-      @media only screen and (max-width: 600px) {
-         footer {
-            clear: both;
-            width: 100%;
-            height: fit-content;
-            outline-offset: 3px;
-            outline: 1px solid goldenrod;
-            border-top: 2px solid rgb(48, 93, 98);
-            background-size: cover;
-            background-position-y: 0;
-            background-image: url(photos/silk.jpg);
-         }
-         .footer_container {
-            width: 100%;
-            height: fit-content;
-            box-sizing: border-box;
-            gap: 10px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-         }
-         .logo_container {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            box-sizing: border-box;
-            gap: 10px;
-         }
-         .logo_container p {
-            width: 100%;
-            font-size: 12px;
-            font-style: italic;
-            text-align: center;
-            box-sizing: border-box;
-            color: rgb(48, 93, 98);
-            font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-         .contact_info {
-            width: 100%;
-            height: fit-content;
-            text-align: center;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-         }
-         .about_links {
-            width: fit-content;
-            height: fit-content;
-            gap: 0;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-         }
-         .about_title {
-            margin: 0;
-            padding: 5px 0;
-            font-size: 18px;
-            font-weight: 800;
-            text-indent: 0;
-            color: rgb(201, 169, 43);
-            font-family: Georgia, "Times New Roman", Times, serif;
-            display: flex;
-            align-items: center;
-         }
-         .company_links {
-            font-size: 15px;
-            text-indent: 0;
-            text-decoration: none;
-            color: rgb(48, 93, 98);
-            font-family: "Montserrat", sans-serif;
-         }
-         .socials {
-            width: 100%;
-            height: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-      }
-   /* RESPONSIVE FOOTER BAR DESIGN [ END ] */
+   .contact_info_left #icon1 {
+      margin: 7px 0 0;
+   }
+
+   .contact_info_left #icon2 {
+      margin: 18.5px 0 0;
+   }
+
+   .contact_info_left #icon3 {
+      margin: 7px 0 0;
+   }
+
+   .contact_info_left #icon4 {
+      margin: 9px 0 0;
+   }
+
+   .contact_info_right {
+      width: auto;
+      height: 100%;
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 10px;
+   }
+
+   .contact_info_right>.address {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: start;
+   }
+
+   .contact_info_right>.e-mail {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+   }
+
+   .about_links {
+      width: fit-content;
+      height: fit-content;
+      gap: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .about_title {
+      margin: 0;
+      padding: 5px 0;
+      font-size: 18px;
+      font-weight: 800;
+      text-indent: 0;
+      color: rgb(201, 169, 43);
+      font-family: Georgia, "Times New Roman", Times, serif;
+      display: flex;
+      align-items: center;
+   }
+
+   .company_links {
+      font-size: 15px;
+      text-indent: 0;
+      text-decoration: none;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+   }
+
+   .socials {
+      width: 100%;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+/* RESPONSIVE FOOTER BAR DESIGN [ END ] */
 
 /* FOOTER BAR SECTION [ END ] */
