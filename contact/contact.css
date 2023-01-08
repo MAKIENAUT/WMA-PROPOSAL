@@ -1,175 +1,195 @@
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: fit-content;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: fit-content;
 }
 
 /* NAVIGATION BAR [ START ] */
 
-   /* NAVBAR DESKTOP DESIGN [ START ] */
+/* NAVBAR DESKTOP DESIGN [ START ] */
+.navbar {
+   width: 100%;
+   height: 60px;
+   background-size: cover;
+   background-image: url(../photos/silk.jpg);
+   top: 0;
+   z-index: 10;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo_holder {
+   width: 25%;
+   left: 30px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav_logo {
+   width: 100%;
+   opacity: 0.8;
+   transition: all 0.2s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_logo:hover {
+   opacity: 2;
+   border-radius: 15px;
+   transition: all 0.2s;
+   background-color: transparent;
+}
+
+.nav_logo img {
+   width: 90%;
+}
+
+.link_holder {
+   width: 45%;
+   height: inherit;
+   top: 0;
+   right: 20px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.nav_links {
+   width: auto;
+   height: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_links a {
+   width: 100%;
+   height: 100%;
+   padding: 0 10px;
+   font-size: 15px;
+   font-weight: 300;
+   text-align: center;
+   transition: all 0.2s;
+   text-decoration: none;
+   color: rgb(37, 37, 37);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_links a:hover {
+   font-weight: 400;
+   color: goldenrod;
+   transition: all 0.2s;
+   border-bottom: 2px solid teal;
+}
+
+.icon {
+   display: none;
+}
+
+/* NAVBAR DESKTOP DESIGN [ END ] */
+
+/* NAVBAR RESPONSIVE DESIGN [ START ]*/
+@media only screen and (max-width: 600px) {
    .navbar {
       width: 100%;
       height: 60px;
-      background-size: cover;
-      background-image: url(../photos/silk.jpg);
+      background-color: white;
       top: 0;
+      left: 0;
       z-index: 10;
       position: fixed;
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
-      .logo_holder {
-         width: 25%;
-         left: 30px;
-         position: absolute;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-      }
-         .nav_logo {
-            width: 100%;
-            opacity: 0.8;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-         .nav_logo:hover {
-            opacity: 2;
-            border-radius: 15px;
-            transition: all 0.2s;
-            background-color: transparent;
-         }
-            .nav_logo img {
-               width: 90%;
-            }
-      .link_holder {
-         width: 45%;
-         height: inherit;
-         top: 0;
-         right: 20px;
-         position: absolute;
-         display: flex;
-         align-items: center;
-         justify-content: space-evenly;
-      }
-         .nav_links {
-            width: auto;
-            height: 70%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .nav_links a {
-               width: 100%;
-               height: 100%;
-               padding: 0 10px;
-               font-size: 15px;
-               font-weight: 300;
-               text-align: center;
-               transition: all 0.2s;
-               text-decoration: none;
-               color: rgb(37, 37, 37);
-               font-family: "Montserrat", sans-serif;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-            }
-               .nav_links a:hover {
-                  font-weight: 400;
-                  color: goldenrod;
-                  transition: all 0.2s;
-                  border-bottom: 2px solid teal;
-               }
-               .icon {
-                  display: none;
-               }
-   /* NAVBAR DESKTOP DESIGN [ END ] */
-               
-   /* NAVBAR RESPONSIVE DESIGN [ START ]*/
-   @media only screen and (max-width: 600px) {
-      .navbar {
-         width: 100%;
-         height: 60px;
-         background-color: white;
-         top: 0;
-         left: 0;
-         z-index: 10;
-         position: fixed;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-      }
-         .logo_holder {
-            width: 70%;
-            height: 100%;
-            left: 5px;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .nav_logo {
-               width: 90%;
-               height: 100%;
-               opacity: 1;
-            }
-      .nav_logo img {
-         width: 100%;
-      }
-      .icon {
-         width: 15%;
-         height: 80%;
-         right: 15px;
-         font-weight: 900;
-         font-size: x-large;
-         text-align: center;
-         position: absolute;
-         text-decoration: none;
-         display: flex;
-         justify-content: start;
-         align-items: center;
-      }
-      .icon i {
-         width: 100%;
-         height: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
+
+   .logo_holder {
+      width: 70%;
+      height: 100%;
+      left: 5px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
-   @media screen and (max-width: 600px) {
-      .navbar .link_holder:not(:first-child) {
-         display: none;
-         height: 0;
-         transition: all 1s;
-      }
-      .navbar a.icon {
-         float: right;
-         display: block;
-      }
+
+   .nav_logo {
+      width: 90%;
+      height: 100%;
+      opacity: 1;
    }
-   @media screen and (max-width: 600px) {
-      .navbar.responsive .link_holder {
-         right: 0;
-         top: 55px;
-         width: 100%;
-         height: 200px;
-         display: flex;
-         transition: all 1s;
-         flex-direction: column;
-         background-color: white;
-         border-top: 1px solid gold;
-      }
-      .navbar.responsive .nav_links {
-         height: 200px;
-         width: 80%;
-         display: flex;
-      }
+
+   .nav_logo img {
+      width: 100%;
    }
-   /* NAVBAR RESPONSIVE DESIGN [ END ]*/
+
+   .icon {
+      width: 15%;
+      height: 80%;
+      right: 15px;
+      font-weight: 900;
+      font-size: x-large;
+      text-align: center;
+      position: absolute;
+      text-decoration: none;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+
+   .icon i {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .navbar .link_holder:not(:first-child) {
+      display: none;
+      height: 0;
+      transition: all 1s;
+   }
+
+   .navbar a.icon {
+      float: right;
+      display: block;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .navbar.responsive .link_holder {
+      right: 0;
+      top: 55px;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      transition: all 1s;
+      flex-direction: column;
+      background-color: white;
+      border-top: 1px solid gold;
+   }
+
+   .navbar.responsive .nav_links {
+      height: 200px;
+      width: 80%;
+      display: flex;
+   }
+}
+
+/* NAVBAR RESPONSIVE DESIGN [ END ]*/
 
 /* NAVIGATION BAR [END] */
 
@@ -177,793 +197,942 @@ body {
 
 /* CONTENT -START- */
 .container {
-  width: 100%;
-  height: 1000px;
-  margin: 60px 0 30px;
-  gap: 80px;
-  display: flex;
-  flex-flow: column nowrap;
-  /* position: absolute;
+   width: 100%;
+   height: 1000px;
+   margin: 60px 0 30px;
+   gap: 80px;
+   display: flex;
+   flex-flow: column nowrap;
+   /* position: absolute;
   top: 60px; */
 }
+
 .subcontainer {
-  width: 100%;
-  height: 100%;
+   width: 100%;
+   height: 100%;
 }
+
 .content_container {
-  width: 100%;
-  height: 100%;
-  /* 
+   width: 100%;
+   height: 100%;
+   /* 
    display: flex;
    justify-content: space-between; */
 }
+
 .content {
-  /* width: 100%; */
-  height: fit-content;
-  gap: 40px;
-  margin: 0 100px 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+   /* width: 100%; */
+   height: fit-content;
+   gap: 40px;
+   margin: 0 100px 0;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
 }
+
 .left {
-  width: 50%;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 20px;
+   width: 50%;
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 20px;
 }
+
 .left h1 {
-  font-size: 35px;
-  font-weight: 400;
-  margin: 0 0 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 35px;
+   font-weight: 400;
+   margin: 0 0 20px;
+   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .left p {
-  font-size: 18px;
-  margin: 0;
-  /* font-weight: 400; */
-  font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 18px;
+   margin: 0;
+   /* font-weight: 400; */
+   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .form {
-  border-top: 1px solid gold;
-  padding-top: 10px;
+   border-top: 1px solid gold;
+   padding-top: 10px;
 }
+
 form {
-  gap: 10px;
-  display: flex;
-  flex-flow: row wrap;
+   gap: 10px;
+   display: flex;
+   flex-flow: row wrap;
 }
+
 textarea {
-  width: 100%;
-  height: 150px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-top: 5px;
-  color: black;
-  border: 0 solid red;
-  /* border-radius: 10px; */
-  background-color: rgb(214, 214, 214);
+   width: 100%;
+   height: 150px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   padding-left: 10px;
+   padding-top: 5px;
+   color: black;
+   border: 0 solid red;
+   /* border-radius: 10px; */
+   background-color: rgb(214, 214, 214);
 }
+
 label {
-  font-size: 18px;
-  border-bottom: 1px solid gray;
-  transition: 0.5ms;
+   font-size: 18px;
+   border-bottom: 1px solid gray;
+   transition: 0.5ms;
 }
+
 input,
 select {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  height: 40px;
-  padding-left: 10px;
-  color: black;
-  border: 0 solid red;
-  /* border-radius: 10px; */
-  background-color: rgb(214, 214, 214);
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   height: 40px;
+   padding-left: 10px;
+   color: black;
+   border: 0 solid red;
+   /* border-radius: 10px; */
+   background-color: rgb(214, 214, 214);
 }
-.valid-input {
-  border: none;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(214, 214, 214);
-  cursor: pointer;
-  font-size: 16px;
-  height: 40px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.valid-input {
+   border: none;
+   width: 100%;
+   text-align: center;
+   border-radius: 10px;
+   background-color: rgb(214, 214, 214);
+   cursor: pointer;
+   font-size: 16px;
+   height: 40px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
 input[type="file"] {
-  width: 100%;
-  display: none;
+   width: 100%;
+   display: none;
 }
 
 input[type="radio"] {
-  width: 20px;
+   width: 20px;
 }
 
 .personal_tab,
 .contact_tab {
-  width: 50%;
-  height: fit-content;
-  background-color: white;
-  border-radius: 15px;
+   width: 50%;
+   height: fit-content;
+   background-color: white;
+   border-radius: 15px;
 
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 15px;
 
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-family: "Montserrat", sans-serif;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   font-family: "Montserrat", sans-serif;
 }
+
 #personal-info,
 #contact-info {
-  padding: 3px;
-  grid-column: span 2;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+   padding: 3px;
+   grid-column: span 2;
+   font-size: 24px;
+   font-weight: 500;
+   font-family: "Montserrat", sans-serif;
 }
+
 #name-title,
 #address-title,
 #contact-title {
-  padding: 3px;
-  grid-column: span 2;
-  font-size: 16px;
-  width: 50%;
-  margin-top: 20px;
+   padding: 3px;
+   grid-column: span 2;
+   font-size: 16px;
+   width: 50%;
+   margin-top: 20px;
 }
+
 .right {
-  width: 50%;
+   width: 50%;
 }
+
 .content_title {
-  width: 100%;
-  height: 350px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-image: url(../photos/phone.jpg);
+   width: 100%;
+   height: 350px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+   background-image: url(../photos/phone.jpg);
 }
+
 .content_title h1 {
-  width: 100%;
-  height: 100%;
-  color: rgb(255, 255, 255);
-  font-size: 45px;
-  font-weight: 400;
-  margin: 0;
-  /* border-radius: 15px 0 15px 0;
+   width: 100%;
+   height: 100%;
+   color: rgb(255, 255, 255);
+   font-size: 45px;
+   font-weight: 400;
+   margin: 0;
+   /* border-radius: 15px 0 15px 0;
    border-top: 2px solid teal;
    border-left: 5px solid gold;
    border-right: 5px solid gold;
    border-bottom: 2px solid teal;*/
-  background-color: rgba(122, 122, 122, 0.267);
-  font-family: Georgia, "Times New Roman", Times, serif;
+   background-color: rgba(122, 122, 122, 0.267);
+   font-family: Georgia, "Times New Roman", Times, serif;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .card_container {
-  width: 100%;
-  height: 100%;
+   width: 100%;
+   height: 100%;
 
-  display: flex;
-  /* position: relative; */
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  /* z-index: 0; */
+   display: flex;
+   /* position: relative; */
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   /* z-index: 0; */
 }
+
 .card1,
 .card2,
 .card3 {
-  width: 200px;
-  height: 70px;
-  color: black;
-  font-size: 18px;
-  margin-right: 50px;
-  border-radius: 10px;
-  position: absolute;
-  transition: all 0.5s;
-  border-top: 2px solid teal;
-  border-right: 5px solid gold;
-  border-bottom: 2px solid teal;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255, 0.7);
+   width: 200px;
+   height: 70px;
+   color: black;
+   font-size: 18px;
+   margin-right: 50px;
+   border-radius: 10px;
+   position: absolute;
+   transition: all 0.5s;
+   border-top: 2px solid teal;
+   border-right: 5px solid gold;
+   border-bottom: 2px solid teal;
+   font-family: "Montserrat", sans-serif;
+   background-color: rgb(255, 255, 255, 0.7);
 
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   z-index: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+
 .card1 {
-  top: 50px;
+   top: 50px;
 }
-.card3 {
-  bottom: 50px;
-}
-.card3 a {
-  width: 100%;
-  height: 100%;
-  color: inherit;
-  font-size: inherit;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card3 {
+   bottom: 50px;
 }
+
+.card3 a {
+   width: 100%;
+   height: 100%;
+   color: inherit;
+   font-size: inherit;
+   text-decoration: none;
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .card1:hover,
 .card2:hover {
-  cursor: pointer;
-  color: white;
-  transition: all 0.5s;
-  border-top: 1px solid gold;
-  border-left: 5px solid gold;
-  border-right: 5px solid teal;
-  border-bottom: 1px solid gold;
-  background-color: rgba(68, 68, 68, 0.7);
+   cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+   border-top: 1px solid gold;
+   border-left: 5px solid gold;
+   border-right: 5px solid teal;
+   border-bottom: 1px solid gold;
+   background-color: rgba(68, 68, 68, 0.7);
 }
+
 .card3:hover {
-  cursor: pointer;
-  color: white;
-  transition: all 0.5s;
-  border-top: 1px solid gold;
-  border-left: 5px solid gold;
-  border-right: 5px solid teal;
-  border-bottom: 1px solid gold;
-  background-color: rgba(68, 68, 68, 0.7);
+   cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+   border-top: 1px solid gold;
+   border-left: 5px solid gold;
+   border-right: 5px solid teal;
+   border-bottom: 1px solid gold;
+   background-color: rgba(68, 68, 68, 0.7);
 }
+
 .telephone {
-  top: 60px;
-  left: 350px;
-  opacity: 0;
-  width: 200px;
-  height: 50px;
-  color: black;
-  font-size: 18px;
-  border-radius: 10px;
-  position: absolute;
-  transition: all 0.5s;
-  border-top: 2px solid teal;
-  border-right: 5px solid gold;
-  border-bottom: 2px solid teal;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255, 0.7);
+   top: 60px;
+   left: 350px;
+   opacity: 0;
+   width: 200px;
+   height: 50px;
+   color: black;
+   font-size: 18px;
+   border-radius: 10px;
+   position: absolute;
+   transition: all 0.5s;
+   border-top: 2px solid teal;
+   border-right: 5px solid gold;
+   border-bottom: 2px solid teal;
+   font-family: "Montserrat", sans-serif;
+   background-color: rgb(255, 255, 255, 0.7);
 
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.email {
-  left: 130px;
-  top: 200px;
-  opacity: 0;
-  width: 340px;
-  height: 50px;
-  color: black;
-  font-size: 18px;
-  border-radius: 10px;
-  position: absolute;
-  transition: all 0.5s;
-  border-top: 2px solid teal;
-  border-right: 5px solid gold;
-  border-bottom: 2px solid teal;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255, 0.7);
 
-  z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.email {
+   left: 130px;
+   top: 200px;
+   opacity: 0;
+   width: 340px;
+   height: 50px;
+   color: black;
+   font-size: 18px;
+   border-radius: 10px;
+   position: absolute;
+   transition: all 0.5s;
+   border-top: 2px solid teal;
+   border-right: 5px solid gold;
+   border-bottom: 2px solid teal;
+   font-family: "Montserrat", sans-serif;
+   background-color: rgb(255, 255, 255, 0.7);
+
+   z-index: -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .map {
-  width: 50%;
-  height: 100%;
+   width: 50%;
+   height: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-items: center;
+   display: flex;
+   align-items: center;
+   justify-items: center;
 }
+
 .mapouter {
-  text-align: right;
-  height: 100%;
-  width: 100%;
+   text-align: right;
+   height: 100%;
+   width: 100%;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
 }
+
 .address_title {
-  width: 100%;
-  height: 19%;
-  position: relative;
+   width: 100%;
+   height: 19%;
+   position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+
 .address_card {
-  width: 200px;
-  height: 70px;
-  color: black;
-  font-size: 18px;
-  border-radius: 10px;
-  position: absolute;
-  transition: all 0.5s;
-  border-top: 2px solid teal;
-  border-left: 5px solid gold;
-  border-right: 5px solid gold;
-  border-bottom: 2px solid teal;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255, 0.7);
+   width: 200px;
+   height: 70px;
+   color: black;
+   font-size: 18px;
+   border-radius: 10px;
+   position: absolute;
+   transition: all 0.5s;
+   border-top: 2px solid teal;
+   border-left: 5px solid gold;
+   border-right: 5px solid gold;
+   border-bottom: 2px solid teal;
+   font-family: "Montserrat", sans-serif;
+   background-color: rgb(255, 255, 255, 0.7);
 
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   z-index: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+
 .address_card:hover {
-  cursor: pointer;
-  color: white;
-  transition: all 0.5s;
-  border-top: 1px solid gold;
-  border-left: 5px solid teal;
-  border-right: 5px solid teal;
-  border-bottom: 1px solid gold;
-  background-color: rgba(68, 68, 68, 0.7);
+   cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+   border-top: 1px solid gold;
+   border-left: 5px solid teal;
+   border-right: 5px solid teal;
+   border-bottom: 1px solid gold;
+   background-color: rgba(68, 68, 68, 0.7);
 }
+
 .address_con {
-  bottom: 0;
-  opacity: 0;
-  width: 600px;
-  height: 30px;
-  color: black;
-  font-size: 18px;
-  border-radius: 10px;
-  position: absolute;
-  transition: all 0.5s;
-  border-top: 2px solid teal;
-  border-left: 5px solid gold;
-  border-right: 5px solid gold;
-  border-bottom: 2px solid teal;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255, 0.7);
+   bottom: 0;
+   opacity: 0;
+   width: 600px;
+   height: 30px;
+   color: black;
+   font-size: 18px;
+   border-radius: 10px;
+   position: absolute;
+   transition: all 0.5s;
+   border-top: 2px solid teal;
+   border-left: 5px solid gold;
+   border-right: 5px solid gold;
+   border-bottom: 2px solid teal;
+   font-family: "Montserrat", sans-serif;
+   background-color: rgb(255, 255, 255, 0.7);
 
-  z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   z-index: -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.address_con p {
-  width: 100%;
-  height: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.address_con p {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .address_con:hover {
-  cursor: pointer;
-  color: white;
-  transition: all 0.5s;
-  border-top: 1px solid gold;
-  border-left: 5px solid teal;
-  border-right: 5px solid teal;
-  border-bottom: 1px solid gold;
-  background-color: rgba(68, 68, 68, 0.7);
+   cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+   border-top: 1px solid gold;
+   border-left: 5px solid teal;
+   border-right: 5px solid teal;
+   border-bottom: 1px solid gold;
+   background-color: rgba(68, 68, 68, 0.7);
 }
 
 .gmap_canvas {
-  /* overflow: hidden; */
-  /* background: none !important; */
-  height: 100%;
-  /* 
+   /* overflow: hidden; */
+   /* background: none !important; */
+   height: 100%;
+   /* 
    width: 100%; */
 
-  /* transition: all 0.5s; */
-  display: flex;
-  /* align-items: center;
+   /* transition: all 0.5s; */
+   display: flex;
+   /* align-items: center;
    justify-content: center; */
 }
-iframe {
-  height: 100%;
-  /* opacity: 60%;
-   width: 75%; */
-  /* border-radius: 15px; */
-  /* transition: all 0.5; */
 
-  display: flex;
-  align-items: center;
-  justify-items: center;
+iframe {
+   height: 100%;
+   /* opacity: 60%;
+   width: 75%; */
+   /* border-radius: 15px; */
+   /* transition: all 0.5; */
+
+   display: flex;
+   align-items: center;
+   justify-items: center;
 }
 
 /* CONTENT -END- */
 
 /* CONTENT RESPONSIVE -START- */
 @media only screen and (max-width: 600px) {
-.container {
-   gap: 20px;
-   height: fit-content;
-   width: 100%;
-   display: flex;
- }
-  .content_title h1 {
-   font-size: 35px;
-   font-weight: 300;
- }
- .content {
-   width: fit-content;
-   height: fit-content;
-   flex-flow: column nowrap;
-   display: flex;
-   align-items: center;
-  justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
- }
- .left {
-   width: fit-content;
-   height: fit-content;
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
- }
- .left h1 {
-   font-size: 35px;
-   font-weight: 400;
-   margin: 0 0 20px;
-   font-family: Georgia, "Times New Roman", Times, serif;
- }
- .left p {
-   font-size: 18px;
-   margin: 0;
-   /* font-weight: 400; */
-   font-family: Georgia, "Times New Roman", Times, serif;
- }
- .right {
-  width: fit-content;
-  height: 300px;
-  
-}
+   .container {
+      gap: 20px;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+   }
+
+   .content_title h1 {
+      font-size: 35px;
+      font-weight: 300;
+   }
+
+   .content {
+      width: fit-content;
+      height: fit-content;
+      flex-flow: column nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   .left {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .left h1 {
+      font-size: 35px;
+      font-weight: 400;
+      margin: 0 0 20px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+   }
+
+   .left p {
+      font-size: 18px;
+      margin: 0;
+      /* font-weight: 400; */
+      font-family: Georgia, "Times New Roman", Times, serif;
+   }
+
+   .right {
+      width: fit-content;
+      height: 300px;
+
+   }
 }
 
 /* ! -------------------------------- */
 
 /* FOOTER BAR SECTION [ START ] */
 
-   /* FOOTER BAR DESKTOP DESIGN [ START ] */
+/* FOOTER BAR DESKTOP DESIGN [ START ] */
+footer {
+   clear: both;
+   width: 100%;
+   height: 220px;
+   outline-offset: 3px;
+   outline: 1px solid goldenrod;
+   border-top: 2px solid rgb(48, 93, 98);
+   background-size: cover;
+   background-position-y: -100px;
+   background-image: url(../photos/silk.jpg);
+}
+
+.footer_container {
+   width: 100%;
+   height: 220px;
+   box-sizing: border-box;
+   gap: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.logo_container {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.logo_container a {
+   width: 100%;
+   margin-top: 15px;
+   transition: 0.5s;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+}
+
+.logo_container a:hover {
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.logo_container img {
+   width: 90%;
+}
+
+.logo_container p {
+   width: 100%;
+   font-size: 12px;
+   padding: 0 15px;
+   font-style: italic;
+   text-align: justify;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact_info {
+   width: 25%;
+   height: 80%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact_info_left {
+   width: 20%;
+   height: 100%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.contact_info_left i {
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   box-sizing: border-box;
+   color: rgb(201, 169, 43);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact_info_right {
+   width: 80%;
+   height: 100%;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.contact_info_right>.address {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>.e-mail {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>.phone {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   box-sizing: border-box;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>p:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.contact_info_right>a {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 600;
+   text-decoration: none;
+   box-sizing: border-box;
+   color: rgb(201, 169, 43);
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.contact_info_right>a:hover {
+   text-decoration: underline;
+}
+
+.about_links {
+   width: 15%;
+   height: 75%;
+   gap: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.about_title {
+   margin: 0;
+   padding: 5px 0;
+   font-size: 18px;
+   font-weight: 800;
+   text-indent: 10px;
+   color: rgb(201, 169, 43);
+   font-family: Georgia, "Times New Roman", Times, serif;
+   display: flex;
+   align-items: center;
+}
+
+.about_links_container {
+   width: 100%;
+   height: fit-content;
+   gap: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.company_links {
+   font-size: 15px;
+   text-indent: 10px;
+   text-decoration: none;
+   color: rgb(48, 93, 98);
+   font-family: "Montserrat", sans-serif;
+}
+
+.company_links:hover {
+   text-decoration: underline;
+}
+
+.socials {
+   width: 20%;
+   height: inherit;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.socials-container {
+   width: 100%;
+   padding: 10px 0 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.socials-container a,
+button {
+   padding: 5px;
+   border: none;
+   font-size: 25px;
+   cursor: pointer;
+   color: rgb(201, 169, 43);
+   text-decoration: none;
+   transition: 0.25s;
+}
+
+.email_button button {
+   font-size: 25px;
+   color: goldenrod;
+   background-color: transparent;
+}
+
+#socialButton1:hover {
+   color: blue;
+   transition: 0.25s;
+}
+
+#socialButton2:hover {
+   color: fuchsia;
+   transition: 0.25s;
+}
+
+#socialButton3:hover {
+   color: orange;
+   transition: 0.25s;
+}
+
+/* FOOTER BAR DESKTOP DESIGN [ START ] */
+
+/* RESPONSIVE FOOTER BAR DESIGN [ START ] */
+@media only screen and (max-width: 600px) {
    footer {
       clear: both;
       width: 100%;
-      height: 220px;
+      height: fit-content;
       outline-offset: 3px;
       outline: 1px solid goldenrod;
       border-top: 2px solid rgb(48, 93, 98);
       background-size: cover;
-      background-position-y: -100px;
-      background-image: url(../photos/silk.jpg);
+      background-position-y: 0;
+      background-image: url(photos/silk.jpg);
    }
-      .footer_container {
-         width: 100%;
-         height: 220px;
-         box-sizing: border-box;
-         gap: 15px;
-         display: flex;
-         align-items: center;
-      }
-         .logo_container {
-            width: 30%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-evenly;
-         }
-            .logo_container a {
-               width: 100%;
-               margin-top: 15px;
-               transition: 0.5s;
-               box-sizing: border-box;
-               display: flex;
-               justify-content: center;
-            }
-               .logo_container a:hover {
-                  opacity: 0.7;
-                  transition: 0.5s;
-               }
-               .logo_container img {
-                  width: 90%;
-               }
-            .logo_container p {
-               width: 100%;
-               font-size: 12px;
-               padding: 0 15px;
-               font-style: italic;
-               text-align: justify;
-               box-sizing: border-box;
-               color: rgb(48, 93, 98);
-               font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-         .contact_info {
-            width: 25%;
-            height: 80%;
-            box-sizing: border-box;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .contact_info_left {
-               width: 20%;
-               height: 100%;
-               box-sizing: border-box;
+   .footer_container {
+      width: 100%;
+      height: fit-content;
+      box-sizing: border-box;
+      gap: 10px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+   }
 
-               display: flex;
-               align-items: center;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .contact_info_left i {
-                  width: 100%;
-                  height: 100%;
-                  font-size: 20px;
-                  box-sizing: border-box;
-                  color: rgb(201, 169, 43);
+   .logo_container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      gap: 10px;
+   }
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-               }
-            .contact_info_right {
-               width: 80%;
-               height: 100%;
-               box-sizing: border-box;
+   .logo_container p {
+      width: 100%;
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+      box-sizing: border-box;
+      color: rgb(48, 93, 98);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
 
-               display: flex;
-               align-items: center;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .contact_info_right > .address {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  box-sizing: border-box;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
+   .contact_info {
+      width: auto;
+      height: fit-content;
+      text-align: start;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 70px;
+      margin: 10px 0 0;
+   }
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-               .contact_info_right > .e-mail {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  font-weight: 400;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-               .contact_info_right > .phone {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  box-sizing: border-box;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-                  .contact_info_right > p:hover {
-                     text-decoration: underline;
-                     cursor: pointer;
-                  }
-                  
-               .contact_info_right > a {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 100%;
-                  font-size: 14px;
-                  font-weight: 600;
-                  text-decoration: none;
-                  box-sizing: border-box;
-                  color: rgb(201, 169, 43);
-                  font-family: "Montserrat", sans-serif;
+   .contact_info_left {
+      width: auto;
+      height: 100%;
+      box-sizing: border-box;
 
-                  display: flex;
-                  align-items: center;
-                  justify-content: start;
-               }
-                  .contact_info_right > a:hover {
-                     text-decoration: underline;
-                  }
-         .about_links {
-            width: 15%;
-            height: 75%;
-            gap: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-         }
-            .about_title {
-               margin: 0;
-               padding: 5px 0;
-               font-size: 18px;
-               font-weight: 800;
-               text-indent: 10px;
-               color: rgb(201, 169, 43);
-               font-family: Georgia, "Times New Roman", Times, serif;
-               display: flex;
-               align-items: center;
-            }
-            .about_links_container {
-               width: 100%;
-               height: fit-content;
-               gap: 5px;
-               display: flex;
-               flex-direction: column;
-               justify-content: space-evenly;
-            }
-               .company_links {
-                  font-size: 15px;
-                  text-indent: 10px;
-                  text-decoration: none;
-                  color: rgb(48, 93, 98);
-                  font-family: "Montserrat", sans-serif;
-               }
-                  .company_links:hover {
-                     text-decoration: underline;
-                  }
-         .socials {
-            width: 20%;
-            height: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-         }
-            .socials-container {
-               width: 100%;
-               padding: 10px 0 10px 0;
-               display: flex;
-               align-items: center;
-               justify-content: space-evenly;
-            }
-            .socials-container a, button {
-               padding: 5px;
-               border: none;
-               font-size: 25px;
-               cursor: pointer;
-               color: rgb(201, 169, 43);
-               text-decoration: none;
-               transition: 0.25s;
-            }
-               .email_button button {
-                  font-size: 25px;
-                  color: goldenrod;
-                  background-color: transparent;
-               }
-                  #socialButton1:hover {
-                     color: blue;
-                     transition: 0.25s;
-                  }
-                  #socialButton2:hover {
-                     color: fuchsia;
-                     transition: 0.25s;
-                  }
-                  #socialButton3:hover {
-                     color: orange;
-                     transition: 0.25s;
-                  }
-   /* FOOTER BAR DESKTOP DESIGN [ START ] */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 10px;
+   }
 
-   /* RESPONSIVE FOOTER BAR DESIGN [ START ] */
-      @media only screen and (max-width: 600px) {
-         footer {
-            clear: both;
-            width: 100%;
-            height: fit-content;
-            outline-offset: 3px;
-            outline: 1px solid goldenrod;
-            border-top: 2px solid rgb(48, 93, 98);
-            background-size: cover;
-            background-position-y: 0;
-            background-image: url(photos/silk.jpg);
-         }
-         .footer_container {
-            width: 100%;
-            height: fit-content;
-            box-sizing: border-box;
-            gap: 10px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-         }
-         .logo_container {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            box-sizing: border-box;
-            gap: 10px;
-         }
-         .logo_container p {
-            width: 100%;
-            font-size: 12px;
-            font-style: italic;
-            text-align: center;
-            box-sizing: border-box;
-            color: rgb(48, 93, 98);
-            font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-         .contact_info {
-            width: 100%;
-            height: fit-content;
-            text-align: center;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-         }
-         .about_links {
-            width: fit-content;
-            height: fit-content;
-            gap: 0;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-         }
-         .about_title {
-            margin: 0;
-            padding: 5px 0;
-            font-size: 18px;
-            font-weight: 800;
-            text-indent: 0;
-            color: rgb(201, 169, 43);
-            font-family: Georgia, "Times New Roman", Times, serif;
-            display: flex;
-            align-items: center;
-         }
-         .company_links {
-            font-size: 15px;
-            text-indent: 0;
-            text-decoration: none;
-            color: rgb(48, 93, 98);
-            font-family: "Montserrat", sans-serif;
-         }
-         .socials {
-            width: 100%;
-            height: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-      }
-   /* RESPONSIVE FOOTER BAR DESIGN [ END ] */
+   .contact_info_left #icon1 {
+      margin: 7px 0 0;
+   }
+
+   .contact_info_left #icon2 {
+      margin: 18.5px 0 0;
+   }
+
+   .contact_info_left #icon3 {
+      margin: 7px 0 0;
+   }
+
+   .contact_info_left #icon4 {
+      margin: 9px 0 0;
+   }
+
+   .contact_info_right {
+      width: auto;
+      height: 100%;
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 10px;
+   }
+
+   .contact_info_right>.address {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: start;
+   }
+
+   .contact_info_right>.e-mail {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+   }
+
+   .about_links {
+      width: fit-content;
+      height: fit-content;
+      gap: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .about_title {
+      margin: 0;
+      padding: 5px 0;
+      font-size: 18px;
+      font-weight: 800;
+      text-indent: 0;
+      color: rgb(201, 169, 43);
+      font-family: Georgia, "Times New Roman", Times, serif;
+      display: flex;
+      align-items: center;
+   }
+
+   .company_links {
+      font-size: 15px;
+      text-indent: 0;
+      text-decoration: none;
+      color: rgb(48, 93, 98);
+      font-family: "Montserrat", sans-serif;
+   }
+
+   .socials {
+      width: 100%;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+/* RESPONSIVE FOOTER BAR DESIGN [ END ] */
 
 /* FOOTER BAR SECTION [ END ] */
