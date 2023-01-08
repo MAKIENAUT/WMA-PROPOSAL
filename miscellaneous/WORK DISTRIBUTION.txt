@@ -86,3 +86,7 @@ PAGE PLANNING [FINALIZATION]:
       - Add Search Feature
       - Activity Logs
    }
+
+
+   git remote -v
+   git init
