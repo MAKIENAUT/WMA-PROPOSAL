@@ -90,7 +90,7 @@ if (!isset($_SESSION['loggedin'])) {
 									class="new"
 									type="radio"
 									name="status"
-									checked>
+									checked="checked">
 
 							<input	id="pending"
 									value="pending"
