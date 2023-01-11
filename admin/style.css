@@ -116,7 +116,7 @@ body {
 			}
 
 			table {
-				width: 90%;
+				width: 100%;
 				row-gap: 5px;
 				color: white;
 				padding: 10px 10px;
@@ -141,6 +141,15 @@ body {
 							text-decoration: none;
 							color: white;
 						}
+							td #new {
+								border: 2px solid red;
+							}
+							td #pending {
+								border: 2px solid yellow;
+							}
+							td #done {
+								border: 2px solid green;
+							}
 						
 						.header tr:hover  th{
 							color: gold;
