@@ -141,13 +141,13 @@ body {
 							text-decoration: none;
 							color: white;
 						}
-							td #new {
+							#new {
 								border: 2px solid red;
 							}
-							td #pending {
+							#pending {
 								border: 2px solid yellow;
 							}
-							td #done {
+							#done {
 								border: 2px solid green;
 							}
 						
