@@ -61,6 +61,7 @@ if (!isset($_SESSION['loggedin'])) {
 						<th>EMail Address</th>
 						<th>Profession</th>
 						<th>Files Directory</th>
+						<th>Status</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -84,13 +85,13 @@ if (!isset($_SESSION['loggedin'])) {
 							</a>
 						</td>
 						<td>
+							<input type="radio">
+						</td>
+						<td>
 							<a class="btn btn-danger" 
 								href="delete.php?id=<?php echo $row['id']; echo $row['file'];?>">
 								Delete
 							</a>
-						</td>
-						<td>
-							hi
 						</td>
 					</tr>                       
 					<?php   
