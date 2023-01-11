@@ -85,7 +85,9 @@ if (!isset($_SESSION['loggedin'])) {
 							</a>
 						</td>
 						<td>
-							<input 	type="radio"
+							<input 	checked
+									type="radio"
+									class="new"
 									id="new">
 							<input 	type="radio"
 									id="pending">
