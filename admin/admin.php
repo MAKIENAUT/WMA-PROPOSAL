@@ -18,6 +18,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<head>
 		<meta charset="utf-8">
 		<title>Admin Panel</title>
+		<script src="admin.js"></script>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
@@ -83,7 +84,8 @@ if (!isset($_SESSION['loggedin'])) {
 							</a>
 						</td>
 						<td>
-							<a 	class="btn btn-danger" 
+							<a 	hidden
+								class="btn btn-danger" 
 								href="delete.php?id=<?php echo $row['id']; echo $row['file'];?>">
 								Delete
 							</a>
