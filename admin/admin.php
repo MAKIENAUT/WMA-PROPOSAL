@@ -86,13 +86,20 @@ if (!isset($_SESSION['loggedin'])) {
 						</td>
 						<td>
 							<input 	checked
-									type="radio"
+									id="new"
 									class="new"
-									id="new">
-							<input 	type="radio"
-									id="pending">
-							<input 	type="radio"
-									id="done">	
+									type="radio"
+									name="status">
+
+							<input	id="pending"
+									class="pending"
+									type="radio"
+									name="status">
+
+							<input 	id="done"
+									class="done"
+									type="radio"
+									name="status">	
 						</td>
 						<td>
 							<a class="btn btn-danger" 
