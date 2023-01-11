@@ -87,7 +87,7 @@ if (!isset($_SESSION['loggedin'])) {
 							<button onclick="delete_verify()">
 								DELETE
 							</button>
-							<a 	hidden
+							<a 	style="display: none;"
 								id="delete_link"
 								class="btn btn-danger" 
 								href="delete.php?id=<?php echo $row['id']; echo $row['file'];?>">
